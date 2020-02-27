@@ -140,7 +140,7 @@ public class SBCardPopupViewController: UIViewController {
         
         // Display Link
         displayLink = CADisplayLink(target: self, selector: #selector(tick))
-        displayLink.add(to: .current, forMode: .RunLoop.Mode.common)
+        displayLink.add(to: .current, forMode: .common)
     }
     
     public override func viewDidAppear(_ animated: Bool) {
